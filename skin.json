@@ -1,0 +1,56 @@
+{
+	"name": "WPtouch",
+	"version": "1.0",
+	"author": [
+		"Dale Mugford",
+		"Duane Storey",
+		"Dan Flores",
+		"Jack Phoenix"
+	],
+	"url": "https://www.mediawiki.org/wiki/Skin:WPtouch",
+	"license-name": "GPL-2.0+",
+	"description": "Simple skin for mobile devices",
+	"type": "skin",
+	"ValidSkinNames": {
+		"wptouch": "WPtouch"
+	},
+	"MessagesDirs": {
+		"SkinWPtouch": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"SkinWPtouch": "WPtouch.skin.php",
+		"WPtouchTemplate": "WPtouch.skin.php"
+	},
+	"Hooks": {
+		"OutputPageBodyAttributes": [
+			"SkinWPtouch::onOutputPageBodyAttributes"
+		]
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "WPtouch"
+	},
+	"ResourceModules": {
+		"skins.wptouch": {
+			"styles": {
+				"resources/css/main.css": {
+					"media": "screen"
+				},
+				"resources/css/really-small.css": {
+					"media": "all and (max-width: 350px)"
+				}
+			},
+			"position": "top"
+		},
+		"skins.wptouch.js": {
+			"position": "bottom",
+			"scripts": [
+				"resources/javascript/core.js",
+				"resources/javascript/url-bar.js"
+			]
+		}
+	},
+	"manifest_version": 1
+}

@@ -1,0 +1,504 @@
+/*
+Theme URI: http://www.bravenewcode.com/wptouch/
+Author: Dale Mugford and Duane Storey
+Author URI: http://www.bravenewcode.com/
+
+The CSS, XHTML and design is released under GPL:
+http://www.opensource.org/licenses/gpl-license.php
+*/
+
+body {
+	font: 12px Helvetica;
+	margin: 0;
+	min-height: 460px;
+	padding: 0;
+	webkit-text-size-adjust: none;
+}
+ul {
+	list-style-position: outside;
+	margin: 0;
+	padding: 0 10px 0 20px;
+}
+ol {
+	list-style-position: outside;
+	list-style-type: decimal;
+	margin: 0;
+	padding: 0 25px 0 20px;
+}
+li {
+	color: #555;
+	font-size: 12px;
+	line-height: 15px;
+}
+input {
+	max-width: 96%;
+}
+iframe {
+	height: auto !important;
+	max-width: 100% !important;
+}
+blockquote {
+	/* @embed */
+	background: #eee url(../images/quotes.png) no-repeat right -2px;
+	border: 1px solid #ccc;
+	font-size: 12px;
+	margin: 5px 1px;
+	padding: 10px;
+	text-align: left;
+	webkit-border-radius: 10px;
+}
+
+/* ashley 16 June 2015: override /resources/src/mediawiki.skinning/elements.css */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	border-bottom: none;
+}
+
+
+.clearer {
+	clear: both;
+}
+.content {
+	margin-top: 15px;
+	position: relative;
+}
+
+.mainentry {
+	color: #444;
+	display: block;
+	line-height: 145%;
+}
+.mainentry p {
+	margin: 2% 0 1%;
+	padding: 0;
+}
+.mainentry h1 {
+	font-size: 22px;
+}
+.mainentry h2 {
+	color: #222;
+	font-size: 15px;
+	margin-bottom: 10px;
+	text-align: left;
+	text-shadow: #f9f9f9 -1px -1px 0;
+}
+.mainentry h3 {
+	color: #222;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 14px;
+	margin-bottom: 10px;
+	text-align: left;
+	text-shadow: #fff -1px 1px 0;
+}
+.mainentry h4 {
+	color: #222;
+	font-size: 13px;
+	margin-bottom: 10px;
+	text-shadow: #f9f9f9 -1px -1px 0;
+}
+.mainentry h5 {
+	font-size: 12px;
+	margin-bottom: 10px;
+	text-shadow: #f9f9f9 -1px -1px 0;
+}
+.mainentry img {
+	height: auto;
+	max-width: 100%;
+}
+#headerbar {
+	background-position: 0 0;
+	background-repeat: repeat-x;
+	border-bottom: 1px solid #1e1e1e;
+	font-size: 19px;
+	height: 45px;
+	width: 100%;
+}
+#headerbar-title {
+	border-style: none;
+	display: block;
+	font-weight: bold;
+	height: 29px;
+	margin: 0;
+	overflow: hidden;
+	padding-bottom: 4px;
+	padding-left: 10px;
+	padding-top: 10px;
+	text-overflow: ellipsis;
+	text-shadow: #242424 -1px -1px 1px;
+	white-space: nowrap;
+	width: 85%;
+}
+#headerbar-title a {
+	font-family: HelveticaNeue-Bold,sans-serif;
+	letter-spacing: -1px;
+	position: relative;
+	text-decoration: none;
+}
+#headerbar-title img#logo-icon {
+	bottom: 1px;
+	float: left;
+	height: 28px;
+	margin-right: 7px;
+	max-width: 30px;
+	padding: 0;
+	position: relative;
+	width: 28px;
+}
+#headerbar-menu {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+#headerbar-menu a {
+	/* @embed */
+	background: url(../images/wptouch-menu-dropper.png) 0 0;
+	display: block;
+	height: 45px;
+	margin: 0;
+	padding: 0;
+	width: 30px;
+}
+#headerbar-menu .open {
+	background-position: 0 -45px;
+}
+#drop-fade {
+	background-color: #333333;
+	border-top: 1px solid #3e3e3e;
+	box-shadow: -3px 2px 3px #000000;
+	display: block;
+	height: 20px;
+	position: relative;
+	text-align: right;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+#drop-fade a.top {
+	bottom: 3px;
+	color: #fff;
+	display: block;
+	float: right;
+	font-size: 10px;
+	margin-right: 8px;
+	padding: 6px 2px 2px 0;
+	position: relative;
+	text-shadow: #000 0px -1px 1px;
+}
+#drop-fade a.top {
+	bottom: 3px;
+	color: #eee;
+	display: block;
+	float: right;
+	font: bold 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	height: 18px;
+	margin-right: 8px;
+	padding: 6px 2px 2px 0;
+	position: relative;
+	text-shadow: #000000 0px -1px 1px;
+}
+#drop-fade #loginopen {
+	/* @embed */
+	background: url(../images/menu-sprite.png) no-repeat 0 -31px;
+	padding-left: 16px;
+}
+#drop-fade #accountopen {
+	/* @embed */
+	background: url(../images/menu-sprite.png) no-repeat 0 -14px;
+	padding-left: 18px;
+}
+#drop-fade #searchopen {
+	/* @embed */
+	background: url(../images/menu-sprite.png) no-repeat 2px -94px;
+	height: 15px;
+	margin-top: 3px;
+	overflow: hidden;
+	padding-bottom: 0;
+	padding-left: 18px;
+	padding-top: 3px;
+}
+.dropper {
+	background-color: #2c2c2c;
+	border-top: 1px solid #1b1b1b;
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+.dropper ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+.dropper li {
+	/* @embed */
+	background: url(../images/arrow.png) no-repeat right center;
+	border-bottom: 1px solid #1d1d1d;
+	border-top: 1px solid #363636;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	/* ashley 16 June 2015: how about no? This isn't very i18n-compatible.
+	text-transform: capitalize;*/
+}
+.dropper li.text {
+	background-image: none;
+	color: #eee;
+	padding-bottom: 25px;
+	padding-top: 25px;
+	text-align: center;
+	text-shadow: #111 0 -1px 1px;
+	text-transform: none;
+}
+.dropper li.text a {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	text-decoration: underline;
+}
+.dropper li:hover {
+	background-color: #222;
+	border-top: 1px solid #222;
+	position: relative;
+	z-index: 2;
+}
+.dropper a {
+	color: #d2d2d2;
+	display: block;
+	font-weight: bold;
+	margin: 0;
+	padding: 11px 35px 11px 15px;
+	text-align: left;
+	text-shadow: #000 -1px -1px 1px;
+	width: auto;
+}
+#wptouch-menu {
+	box-shadow: #333 -6px 6px 6px;
+	display: none;
+	moz-box-shadow: #333 -6px 6px 6px;
+	position: absolute;
+	top: 45px;
+	webkit-box-shadow: #333 -6px 6px 6px;
+	z-index: 2;
+}
+#wptouch-menu-inner a:hover {
+	color: #006bb3;
+}
+#wptouch-menu-inner img {
+	bottom: 5px;
+	float: left;
+	padding-right: 10px;
+	position: relative;
+	right: 0;
+	width: 28px;
+}
+#tabnav {
+	background-color: #444;
+	border-bottom: 1px solid #1b1b1b;
+	border-top: 1px solid #575757;
+	height: 24px;
+	margin-bottom: -1px;
+	padding-left: 10px;
+	padding-top: 3px;
+}
+#tabnav a {
+	color: #999;
+	display: inline-block;
+	margin: 0;
+	padding: 2px 8px 7px;
+	text-shadow: #111 0 -1px 1px;
+}
+#tabnav a.selected {
+	background-color: #2c2c2c;
+	border: 1px solid #1b1b1b;
+	border-bottom: 1px solid #2c2c2c;
+	color: #fff !important;
+	margin-left: -1px;
+	margin-right: -1px;
+	position: relative;
+	text-shadow: #000 0 -1px 1px;
+	webkit-border-top-left-radius: 4px;
+	webkit-border-top-right-radius: 4px;
+	webkit-box-shadow: #222 0px -2px 3px;
+	z-index: 1;
+}
+#tabnav a:hover, #tabnav a:active {
+	color: #fff;
+}
+#wptouch-login {
+	display: none;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+#wptouch-login-inner {
+	background-repeat: repeat-x;
+	height: 35px;
+	padding-bottom: 2px;
+	padding-top: 8px;
+	text-align: center;
+	width: 100%;
+}
+#wptouch-login input#wpName {
+	border: 1px solid #1b1b1b;
+	color: #222;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 3px;
+	webkit-border-radius: 10px;
+	border-radius: 10px;
+	width: 120px;
+}
+#wptouch-login input#wpPassword {
+	border: 1px solid #1b1b1b;
+	color: #222;
+	font-size: 13px;
+	font-weight: bold;
+	margin-left: 5px;
+	padding: 3px;
+	webkit-border-radius: 10px;
+	border-radius: 10px;
+	width: 120px;
+}
+#wptouch-search {
+	display: none;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+#wptouch-search-inner {
+	background-repeat: repeat-x;
+	height: 40px;
+	padding-top: 5px;
+	text-align: center;
+	width: 100%;
+}
+input#searchInput {
+	border: 1px solid #1b1b1b;
+	border-radius: 10px;
+	color: #222;
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: 6px;
+	moz-border-radius: 10px;
+	padding: 4px;
+	text-align: left;
+	webkit-border-radius: 10px;
+	/* ashley: changed from 80 to 70 so that the "x" image fits on screen
+	 * when the device's screen res is 320x480px
+	 */
+	width: 70%;
+}
+img.head-close {
+	display: inline;
+	left: 5px;
+	position: relative;
+	top: 6px;
+}
+.post {
+	background-color: #fff;
+	border: 1px solid #b1b1b1;
+	border-radius: 8px;
+	box-shadow: rgba(255,255,255,.8) 0px 1px 0px;
+	margin-bottom: 12px;
+	margin-left: 10px;
+	margin-right: 10px;
+	moz-border-radius: 8px;
+	moz-box-shadow: rgba(255,255,255,.8) 0px 1px 0px;
+	padding: 10px;
+	position: relative;
+	webkit-border-radius: 8px;
+	webkit-box-shadow: rgba(255,255,255,.8) 0px 1px 0px;
+	z-index: 0;
+}
+a.tt {
+	display: none !important;
+}
+.post object, .post embed {
+	height: auto;
+	position: relative;
+	width: 100% !important;
+	z-index: 0;
+}
+a#ribbon {
+	display: none !important;
+}
+#noscript-wrap {
+	background-color: #eee;
+	height: 100%;
+	left: 0;
+	opacity: 0.9;
+	position: absolute;
+	top: 0;
+	width: 10%;
+	z-index: 1000;
+}
+#noscript {
+	/* ashley 15 June 2015: no such image, apparently...
+	background: #0d0d0d url(../../images/saved.png) no-repeat center top;*/
+	border: 3px solid #444;
+	color: #ddd;
+	display: block;
+	font: 14px Helvetica,Arial,sans-serif;
+	height: 54%;
+	margin: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 110px;
+	text-align: center;
+	text-shadow: #000 -1px -1px 0;
+	webkit-border-radius: 15px;
+	webkit-box-shadow: #444 0px 0px 15px;
+	width: auto;
+}
+
+div.printfooter {
+	display: none;
+}
+#headerbar, #wptouch-login, #wptouch-search {
+	/* @embed */
+	background: #000000 url(../images/head-fade-bk.png);
+}
+#headerbar-title, #headerbar-title a {
+	color: #eeeeee;
+}
+a {
+	color: #006bb3;
+}
+
+pre, code {
+	color: red;
+	font-family: Courier, "Courier New", mono;
+	white-space: pre-line;
+}
+
+table.wikitable, table.TablePager {
+	padding: 0.3em;
+}
+.wikitable th, .wikitable td {
+	border: 1px solid #A0A0A0;
+	color: #000;
+}
+.TablePager th, .TablePager td {
+	background-color: #ffffff;
+	border: 1px solid #A0A0A0;
+	padding: 0.3em;
+}
+.wikitable th, .TablePager th {
+	background-color: #d0d0d0;
+	font-weight: bold;
+	padding: 0.3em;
+}
