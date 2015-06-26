@@ -200,7 +200,7 @@ class WPtouchTemplate extends BaseTemplate {
 </div>
 
 <div id="drop-fade">
- 	<a id="searchopen" class="top" href="#"><?php $this->msg( 'search' ) ?></a>
+	<a id="searchopen" class="top" href="#"><?php $this->msg( 'search' ) ?></a>
 </div>
 
 <div class="content">
@@ -209,7 +209,7 @@ class WPtouchTemplate extends BaseTemplate {
 		<hr />
 		<div class="clearer"></div>
 		<div class="mainentry mw-body">
- 			<p><?php $this->html( 'bodytext' ) ?></p>
+			<?php $this->html( 'bodytext' ) ?>
 			<?php if ( $this->data['dataAfterContent'] ) { $this->html( 'dataAfterContent' ); } ?>
 		</div>
 	</div>
