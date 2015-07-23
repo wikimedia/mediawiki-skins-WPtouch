@@ -44,7 +44,7 @@ class SkinWPtouch extends SkinTemplate {
 
 		parent::initPage( $out );
 
-		$out->addMeta( 'viewport', 'width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;' );
+		$out->addMeta( 'viewport', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' );
 		$out->addLink( array(
 			'rel' => 'apple-touch-icon',
 			'href' => $wgLocalStylePath . '/WPtouch/resources/images/favicon.png'
