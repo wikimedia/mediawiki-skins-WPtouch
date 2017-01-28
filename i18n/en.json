@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": []
 	},
+	"wptouch-desc": "Simple skin for mobile devices",
 	"wptouch-noscript-body": "JavaScript is currently turned off.\nTurn it on in <em>Settings</em><br /> to view this website.",
 	"wptouch-noscript-title": "Notice"
 }
