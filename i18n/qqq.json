@@ -1,5 +1,5 @@
 {
-	"@metadata": {},
+	"@metadata": [],
 	"wptouch-desc": "{{desc|what=skin|name=WPtouch|url=https://www.mediawiki.org/wiki/Skin:WPtouch}}",
 	"wptouch-noscript-body": "Hint for users without javascript or with disabled javascript",
 	"wptouch-noscript-title": "Used as header of {{msg-mw|wptouch-noscript-body}}"
