@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Elias Ahmmad"
+			"Elias Ahmmad",
+			"Aftabuzzaman"
 		]
 	},
+	"wptouch-desc": "মোবাইল ডিভাইসের জন্য সহজ আবরণ",
+	"wptouch-noscript-body": "বর্তমানে জাভাস্ক্রিপ্ট বন্ধ করা আছে। এই ওয়েবসাইট দেখতে <em>সেটিং</em><br /> থেকে এটি চালু করুন।",
 	"wptouch-noscript-title": "বিজ্ঞপ্তি"
 }

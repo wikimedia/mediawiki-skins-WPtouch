@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Arthur2e5"
 		]
 	},
 	"wptouch-desc": "用于移动设备的简易皮肤",
-	"wptouch-noscript-body": "JavaScript目前被禁用。请在<em>Settings</em>中打开<br />以访问该网站。",
+	"wptouch-noscript-body": "JavaScript目前已被禁用。<br />请在<b>设置</b>中打开以访问该网站。",
 	"wptouch-noscript-title": "提示"
 }
