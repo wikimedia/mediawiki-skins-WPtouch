@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Redredsonia"
+			"Redredsonia",
+			"Nitch"
 		]
 	},
+	"wptouch-desc": "Простой скин для мобильных устройств",
 	"wptouch-noscript-title": "Уведомление"
 }
