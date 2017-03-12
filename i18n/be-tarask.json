@@ -4,5 +4,7 @@
 			"Red Winged Duck"
 		]
 	},
-	"wptouch-desc": "Простая тэма афармленьня для мабільных прыладаў"
+	"wptouch-desc": "Простая тэма афармленьня для мабільных прыладаў",
+	"wptouch-noscript-body": "JavaScript цяпер адключаны.\nУключыце яго ў <em>наладах</em><br />, каб праглядзець гэты сайт.",
+	"wptouch-noscript-title": "Заўвага"
 }
