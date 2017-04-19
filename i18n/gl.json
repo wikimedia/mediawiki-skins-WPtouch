@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Banjo"
+			"Banjo",
+			"Elisardojm"
 		]
 	},
+	"wptouch-desc": "Aparencia sinxela para dispositivos móbiles",
+	"wptouch-noscript-body": "JavaScript está actualmente desactivado.\nActíveo en <em>Configuración</em><br /> para ver este sitio web.",
 	"wptouch-noscript-title": "Aviso"
 }
