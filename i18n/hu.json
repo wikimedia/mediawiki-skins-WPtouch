@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tacsipacsi"
+		]
+	},
+	"wptouch-desc": "Egyszerű felület mobileszközökre",
+	"wptouch-noscript-body": "A JavaScript jelenleg ki van kapcsolva.\nEngedélyezd a <em>Beállítások</em>ban<br />a weboldal megtekintéséhez.",
+	"wptouch-noscript-title": "Megjegyzés"
+}
