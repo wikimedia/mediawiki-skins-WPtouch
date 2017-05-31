@@ -4,5 +4,7 @@
 			"Srdjan m"
 		]
 	},
-	"wptouch-noscript-body": "JavaScript je trenutno isključen.\nUključite ga u <em>Postavkama</em><br /> da biste pregledali ovaj veb-sajt."
+	"wptouch-desc": "Jednostavna tema za mobilne uređaje",
+	"wptouch-noscript-body": "JavaScript je trenutno isključen.\nUključite ga u <em>Postavkama</em><br /> da biste pregledali ovaj veb-sajt.",
+	"wptouch-noscript-title": "Obavještenje"
 }
