@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Redredsonia"
+			"Redredsonia",
+			"Selven"
 		]
 	},
+	"wptouch-desc": "Tema Semplice per dispositivi mobili",
+	"wptouch-noscript-body": "I JavaScript sono attualmente disattivati.\nAttivali in <em>Impostazioni</em><br/>per visualizzare questo sito",
 	"wptouch-noscript-title": "Avviso"
 }
