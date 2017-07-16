@@ -15,26 +15,6 @@ class SkinWPtouch extends SkinTemplate {
 		$template = 'WPtouchTemplate', $useHeadElement = true;
 
 	/**
-	 * Add the class "skated-wptouch-bg" to the <body> element for pages rendered
-	 * with this skin.
-	 *
-	 * @param OutputPage $out
-	 * @param Skin $skin
-	 * @param array $bodyAttrs Pre-existing attributes of the <body> tag
-	 * @return bool
-	 */
-	public static function onOutputPageBodyAttributes( $out, $skin, &$bodyAttrs ) {
-		// The skin class check has to be present because hooks are global!
-		// I'm actually not sure if that's the case anymore (this used to use
-		// an anonymous function in the setup file), but better to be safe than
-		// sorry...and I'm lazy, too.
-		if ( get_class( $skin ) == 'SkinWPtouch' ) {
-			$bodyAttrs['class'] .= ' skated-wptouch-bg';
-		}
-		return true;
-	}
-
-	/**
 	 * Initializes OutputPage and sets up skin-specific parameters
 	 *
 	 * @param OutputPage $out
@@ -65,6 +45,17 @@ class SkinWPtouch extends SkinTemplate {
 			'mediawiki.skinning.content.externallinks',
 			'skins.wptouch'
 		) );
+	}
+
+	/**
+	 * Add the class "skated-wptouch-bg" to the <body> element for pages rendered
+	 * with this skin.
+	 *
+	 * @param OutputPage $out
+	 * @param array $bodyAttrs Pre-existing attributes of the <body> tag
+	 */
+	public function addToBodyAttributes( $out, &$bodyAttrs ) {
+		$bodyAttrs['class'] .= ' skated-wptouch-bg';
 	}
 }
 
@@ -123,7 +114,7 @@ class WPtouchTemplate extends BaseTemplate {
 	</div>
 </div>
 
- <!-- #start The Search Overlay -->
+<!-- #start The Search Overlay -->
 <div id="wptouch-search">
 	<div id="wptouch-search-inner">
 		<form method="get" id="searchform" action="<?php $this->text( 'wgScript' ) ?>">
@@ -208,7 +199,7 @@ class WPtouchTemplate extends BaseTemplate {
 		<h2><?php $this->data['displaytitle'] != '' ? $this->html( 'title' ) : $this->text( 'title' ) ?></h2>
 		<hr />
 		<div class="clearer"></div>
-		<div class="mainentry mw-body">
+		<div class="mainentry mw-body-content">
 			<?php $this->html( 'bodytext' ) ?>
 			<?php if ( $this->data['dataAfterContent'] ) { $this->html( 'dataAfterContent' ); } ?>
 		</div>
