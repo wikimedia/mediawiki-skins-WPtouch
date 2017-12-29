@@ -156,8 +156,9 @@ class WPtouchTemplate extends BaseTemplate {
 				foreach ( $this->getToolbox() as $key => $item ) {
 					echo $this->makeListItem( $key, $item );
 				}
-
-				Hooks::run( 'SkinTemplateToolboxEnd', array( &$this, true ) );
+				// Avoid PHP 7.1 warning of passing $this by reference
+				$skin = $this;
+				Hooks::run( 'SkinTemplateToolboxEnd', array( &$skin, true ) );
 				?>
 			</ul>
 
