@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"Athena in Wonderland"
 		]
 	},
 	"wptouch-desc": "Tema simples para dispositivos móveis",
-	"wptouch-noscript-body": "O JavaScript está desativado.\nAtive-o em <em>Configurações</em><br /> para ver este site.",
+	"wptouch-noscript-body": "O JavaScript está desativado.\nAtive-o em <em>Configurações</em><br /> para ver este sítio.",
 	"wptouch-noscript-title": "Aviso"
 }
