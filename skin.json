@@ -36,11 +36,9 @@
 				"resources/css/really-small.css": {
 					"media": "all and (max-width: 350px)"
 				}
-			},
-			"position": "top"
+			}
 		},
 		"skins.wptouch.js": {
-			"position": "bottom",
 			"scripts": [
 				"resources/javascript/core.js",
 				"resources/javascript/url-bar.js"
