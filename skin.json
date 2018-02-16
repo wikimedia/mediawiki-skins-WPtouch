@@ -8,7 +8,7 @@
 		"Jack Phoenix"
 	],
 	"url": "https://www.mediawiki.org/wiki/Skin:WPtouch",
-	"license-name": "GPL-2.0+",
+	"license-name": "GPL-2.0-or-later",
 	"descriptionmsg": "wptouch-desc",
 	"type": "skin",
 	"ValidSkinNames": {
