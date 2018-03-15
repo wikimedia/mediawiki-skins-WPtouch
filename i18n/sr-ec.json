@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Acamicamacaraca"
+			"Acamicamacaraca",
+			"BadDog"
 		]
 	},
+	"wptouch-desc": "Једноставна тема за мобилне уређаје",
+	"wptouch-noscript-body": "Јаваскрипт је тренутно искључен.\nУкључите га у <em>Подешавањима</em><br /> да бисте гледали овај веб-сајт.",
 	"wptouch-noscript-title": "Обавештење"
 }
