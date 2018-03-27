@@ -12,7 +12,7 @@
  */
 class SkinWPtouch extends SkinTemplate {
 	public $skinname = 'wptouch', $stylename = 'wptouch',
-		$template = 'WPtouchTemplate', $useHeadElement = true;
+		$template = 'WPtouchTemplate';
 
 	/**
 	 * Initializes OutputPage and sets up skin-specific parameters
