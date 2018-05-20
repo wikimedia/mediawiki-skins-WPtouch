@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"烈羽",
-			"Wehwei"
+			"Wehwei",
+			"Kly"
 		]
 	},
-	"wptouch-desc": "針對行動裝置的屏膚。",
+	"wptouch-desc": "針對行動裝置的外觀。",
 	"wptouch-noscript-body": "JavaScript目前未被啟用。<br />請在<em>設定</em>中開啟以訪問該網站。",
 	"wptouch-noscript-title": "提示"
 }
