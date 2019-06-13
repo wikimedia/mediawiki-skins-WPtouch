@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Reza1615"
+			"Reza1615",
+			"FarsiNevis"
 		]
 	},
-	"wptouch-desc": "پوستهٔ ساده برای دستگاه‌های موبایل",
+	"wptouch-desc": "پوسته‌ای ساده برای دستگاه‌های همراه",
+	"wptouch-noscript-body": "جاوا اسکریپت غیر فعال است.\nآن را در <em>Settings</em><br /> فعال کنید تا وبگاه، قابل مشاهده شود.",
 	"wptouch-noscript-title": "توجه"
 }
