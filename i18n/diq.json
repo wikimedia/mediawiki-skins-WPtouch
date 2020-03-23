@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Orbot707"
+			"Orbot707",
+			"Mirzali"
 		]
 	},
 	"wptouch-desc": "Seba cihazanê mobilim asayışo basit",
-	"wptouch-noscript-body": "JavaScript enewke racınayeyo. \nNa website mocnayışi rê tedey <em>Eyaran</em><br /> de akerê",
+	"wptouch-noscript-body": "JavaScript nıka cadayiyo. \nSeba mocnayışê na website rê <em>eyaran</em><br /> de akerê.",
 	"wptouch-noscript-title": "Tebliğ"
 }
