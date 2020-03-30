@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Otokoume"
+			"Otokoume",
+			"Shirayuki"
 		]
 	},
-	"wptouch-desc": "モバイル端末向けのシンプルなスキン",
+	"wptouch-desc": "モバイル端末向けのシンプルな外装",
 	"wptouch-noscript-body": "JavaScript は現在無効です。\nこのウェブサイトを閲覧するには、ブラウザの<em>設定</em>から JacaScript を有効にしてください。",
 	"wptouch-noscript-title": "お知らせ"
 }
