@@ -5,6 +5,8 @@
  * @file
  */
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * Inherit main code from SkinTemplate, set the CSS and template filter.
  *
@@ -65,7 +67,13 @@ class WPtouchTemplate extends BaseTemplate {
 
 		$skin = $this->data['skin'];
 
-		$logoIcon = wfFindFile( 'WPtouch-logo-icon.png' );
+		if ( method_exists( MediaWikiServices::class, 'getRepoGroup' ) ) {
+			// MediaWiki 1.34+
+			$logoIcon = MediaWikiServices::getInstance()->getRepoGroup()
+				->findFile( 'WPtouch-logo-icon.png' );
+		} else {
+			$logoIcon = wfFindFile( 'WPtouch-logo-icon.png' );
+		}
 		if ( is_object( $logoIcon ) ) {
 			$logoURL = $logoIcon->getUrl();
 		} else {
