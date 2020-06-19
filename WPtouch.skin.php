@@ -48,17 +48,6 @@ class SkinWPtouch extends SkinTemplate {
 			'skins.wptouch'
 		) );
 	}
-
-	/**
-	 * Add the class "skated-wptouch-bg" to the <body> element for pages rendered
-	 * with this skin.
-	 *
-	 * @param OutputPage $out
-	 * @param array $bodyAttrs Pre-existing attributes of the <body> tag
-	 */
-	public function addToBodyAttributes( $out, &$bodyAttrs ) {
-		$bodyAttrs['class'] .= ' skated-wptouch-bg';
-	}
 }
 
 class WPtouchTemplate extends BaseTemplate {

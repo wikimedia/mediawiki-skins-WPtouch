@@ -21,7 +21,11 @@
 	},
 	"AutoloadClasses": {
 		"SkinWPtouch": "WPtouch.skin.php",
-		"WPtouchTemplate": "WPtouch.skin.php"
+		"WPtouchTemplate": "WPtouch.skin.php",
+		"WPtouchHooks": "WPtouchHooks.php"
+	},
+	"Hooks": {
+		"OutputPageBodyAttributes": "WPtouchHooks::onOutputPageBodyAttributes"
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
