@@ -20,8 +20,8 @@
 		]
 	},
 	"AutoloadClasses": {
-		"SkinWPtouch": "WPtouch.skin.php",
-		"WPtouchTemplate": "WPtouch.skin.php",
+		"SkinWPtouch": "SkinWPtouch.php",
+		"WPtouchTemplate": "WPtouchTemplate.php",
 		"WPtouchHooks": "WPtouchHooks.php"
 	},
 	"Hooks": {
