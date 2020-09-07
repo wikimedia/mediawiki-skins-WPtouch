@@ -13,36 +13,19 @@ class WPtouchTemplate extends BaseTemplate {
 
 		$skin = $this->data['skin'];
 
-		if ( method_exists( MediaWikiServices::class, 'getRepoGroup' ) ) {
-			// MediaWiki 1.34+
-			$logoIcon = MediaWikiServices::getInstance()->getRepoGroup()
-				->findFile( 'WPtouch-logo-icon.png' );
-		} else {
-			$logoIcon = wfFindFile( 'WPtouch-logo-icon.png' );
-		}
+		$logoIcon = MediaWikiServices::getInstance()->getRepoGroup()
+			->findFile( 'WPtouch-logo-icon.png' );
+
 		if ( is_object( $logoIcon ) ) {
 			$logoURL = $logoIcon->getUrl();
 		} else {
 			$logoURL = $wgStylePath . '/WPtouch/resources/images/favicon.png';
 		}
 
-		// Login stuff borrowed from the UserLoginBox extension
-		if ( session_id() == '' ) {
-			wfSetupSession();
-		}
-
-		if ( !LoginForm::getLoginToken() ) {
-			LoginForm::setLoginToken();
-			$token = LoginForm::getLoginToken();
-		} else {
-			$token = LoginForm::getLoginToken();
-		}
-
-		$loginURL = SpecialPage::getTitleFor( 'Userlogin' )->getFullURL( array(
-			'action' => 'submitlogin',
-			'type' => 'login',
-			'wpLoginToken' => $token
-		) );
+		$loginURL = SpecialPage::getTitleFor( 'Userlogin' )->getFullURL( [
+			'authAction' => 'login',
+			'wpLoginToken' => $skin->getRequest()->getSession()->getToken( '', 'login' )
+		] );
 
 		$this->html( 'headelement' );
 ?>
@@ -60,8 +43,8 @@ class WPtouchTemplate extends BaseTemplate {
 <div id="wptouch-login">
 	<div id="wptouch-login-inner">
 		<form name="loginform" id="loginform" action="<?php echo htmlspecialchars( $loginURL, ENT_QUOTES ) ?>" method="post">
-			<label><input type="text" name="wpName" id="wpName" value="<?php $this->msg( 'userlogin-yourname' ) ?>" /></label>
-			<label><input type="password" name="wpPassword" id="wpPassword" value="<?php $this->msg( 'userlogin-yourpassword' ) ?>" /></label>
+			<label><input type="text" name="wpName" id="wpName" placeholder="<?php $this->msg( 'userlogin-yourname' ) ?>" /></label>
+			<label><input type="password" name="wpPassword" id="wpPassword" placeholder="<?php $this->msg( 'userlogin-yourpassword' ) ?>" /></label>
 			<input type="hidden" id="logsub" name="submit" value="Login" tabindex="9" />
 			<a href="#"><img class="head-close" src="<?php $this->text( 'stylepath' ) ?>/WPtouch/resources/images/head-close.png" alt="close" /></a>
 		</form>
