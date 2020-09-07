@@ -25,10 +25,10 @@ class SkinWPtouch extends SkinTemplate {
 		parent::initPage( $out );
 
 		$out->addMeta( 'viewport', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' );
-		$out->addLink( array(
+		$out->addLink( [
 			'rel' => 'apple-touch-icon',
 			'href' => $wgLocalStylePath . '/WPtouch/resources/images/favicon.png'
-		) );
+		] );
 
 		$out->addModules( 'skins.wptouch.js' );
 	}
@@ -40,10 +40,10 @@ class SkinWPtouch extends SkinTemplate {
 		parent::setupSkinUserCss( $out );
 
 		// Append to the default screen common & print styles...
-		$out->addModuleStyles( array(
+		$out->addModuleStyles( [
 			'mediawiki.skinning.interface',
 			'mediawiki.skinning.content.externallinks',
 			'skins.wptouch'
-		) );
+		] );
 	}
 }

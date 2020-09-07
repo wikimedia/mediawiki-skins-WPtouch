@@ -57,8 +57,8 @@ class WPtouchTemplate extends BaseTemplate {
 		<form method="get" id="searchform" action="<?php $this->text( 'wgScript' ) ?>">
 			<input type="hidden" name="title" value="<?php $this->text( 'searchtitle' ) ?>"/>
 			<?php
-				echo $this->makeSearchInput( array( 'id' => 'searchInput' ) );
-				echo $this->makeSearchButton( 'go', array( 'id' => 'searchGoButton', 'class' => 'searchButton' ) );
+				echo $this->makeSearchInput( [ 'id' => 'searchInput' ] );
+				echo $this->makeSearchButton( 'go', [ 'id' => 'searchGoButton', 'class' => 'searchButton' ] );
 			?>
 			<a href="#"><img class="head-close" src="<?php $this->text( 'stylepath' ) ?>/WPtouch/resources/images/head-close.png" alt="close" /></a>
 		</form>
@@ -74,7 +74,7 @@ class WPtouchTemplate extends BaseTemplate {
 
 			<ul id="head-navigation">
 			<?php
-			$skipped = array( 'LANGUAGES', 'SEARCH', 'TOOLBOX' );
+			$skipped = [ 'LANGUAGES', 'SEARCH', 'TOOLBOX' ];
 			foreach ( $this->data['sidebar'] as $boxName => $content ) {
 				if ( $content === false || in_array( $boxName, $skipped ) ) {
 					continue;
@@ -95,7 +95,7 @@ class WPtouchTemplate extends BaseTemplate {
 				}
 				// Avoid PHP 7.1 warning of passing $this by reference
 				$skin = $this;
-				Hooks::run( 'SkinTemplateToolboxEnd', array( &$skin, true ) );
+				Hooks::run( 'SkinTemplateToolboxEnd', [ &$skin, true ] );
 				?>
 			</ul>
 
