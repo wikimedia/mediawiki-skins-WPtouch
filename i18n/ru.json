@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Facenapalm",
+			"Helpau",
 			"Nitch",
 			"Redredsonia"
 		]
 	},
-	"wptouch-desc": "Простой скин для мобильных устройств",
+	"wptouch-desc": "Простая тема для мобильных устройств",
 	"wptouch-noscript-body": "В данный момент JavaScript отключён.\nВключите его в <em>Настройках</em><br /> для просмотра этого сайта.",
 	"wptouch-noscript-title": "Уведомление"
 }
