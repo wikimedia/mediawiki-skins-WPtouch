@@ -7,12 +7,30 @@
 		"Dan Flores",
 		"Jack Phoenix"
 	],
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
 	"url": "https://www.mediawiki.org/wiki/Skin:WPtouch",
 	"license-name": "GPL-2.0-or-later",
 	"descriptionmsg": "wptouch-desc",
 	"type": "skin",
 	"ValidSkinNames": {
-		"wptouch": "WPtouch"
+		"wptouch": {
+			"class": "SkinWPtouch",
+			"args": [
+				{
+					"name": "wptouch",
+					"styles": [
+						"mediawiki.skinning.interface",
+						"mediawiki.skinning.content.externallinks",
+						"skins.wptouch"
+					],
+					"scripts": [
+						"skins.wptouch.js"
+					]
+				}
+			]
+		}
 	},
 	"MessagesDirs": {
 		"SkinWPtouch": [

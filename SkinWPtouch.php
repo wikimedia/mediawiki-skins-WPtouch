@@ -29,21 +29,5 @@ class SkinWPtouch extends SkinTemplate {
 			'rel' => 'apple-touch-icon',
 			'href' => $wgLocalStylePath . '/WPtouch/resources/images/favicon.png'
 		] );
-
-		$out->addModules( 'skins.wptouch.js' );
-	}
-
-	/**
-	 * @param $out OutputPage
-	 */
-	function setupSkinUserCss( OutputPage $out ) {
-		parent::setupSkinUserCss( $out );
-
-		// Append to the default screen common & print styles...
-		$out->addModuleStyles( [
-			'mediawiki.skinning.interface',
-			'mediawiki.skinning.content.externallinks',
-			'skins.wptouch'
-		] );
 	}
 }
