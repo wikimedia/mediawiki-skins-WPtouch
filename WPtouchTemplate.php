@@ -90,7 +90,7 @@ class WPtouchTemplate extends BaseTemplate {
 
 			<ul id="head-toolbox">
 				<?php
-				foreach ( $this->getToolbox() as $key => $item ) {
+				foreach ( $this->data['sidebar']['TOOLBOX'] as $key => $item ) {
 					echo $this->makeListItem( $key, $item );
 				}
 				?>
