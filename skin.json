@@ -55,6 +55,9 @@
 				"resources/css/main.css": {
 					"media": "screen"
 				},
+				"resources/css/print.css": {
+					"media": "print"
+				},
 				"resources/css/really-small.css": {
 					"media": "all and (max-width: 350px)"
 				}
