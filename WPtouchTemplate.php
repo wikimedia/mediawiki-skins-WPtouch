@@ -26,8 +26,6 @@ class WPtouchTemplate extends BaseTemplate {
 			'authAction' => 'login',
 			'wpLoginToken' => $skin->getRequest()->getSession()->getToken( '', 'login' )
 		] );
-
-		$this->html( 'headelement' );
 ?>
 <!-- New noscript check, we need JS on now folks -->
 <noscript>
@@ -131,7 +129,7 @@ class WPtouchTemplate extends BaseTemplate {
 
 <div class="content">
 	<div class="post">
-		<h2><?php $this->data['displaytitle'] != '' ? $this->html( 'title' ) : $this->text( 'title' ) ?></h2>
+		<h2><?php $this->html( 'title' ) ?></h2>
 		<hr />
 		<div class="clearer"></div>
 		<div class="mainentry mw-body-content">
@@ -143,10 +141,6 @@ class WPtouchTemplate extends BaseTemplate {
 
 		<div class="cleared"></div>
 		<div class="visualClear"></div>
-
-		<?php $this->printTrail(); ?>
-	</body>
-</html>
 <?php
 	}
 }
