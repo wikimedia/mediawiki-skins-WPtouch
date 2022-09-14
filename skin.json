@@ -8,7 +8,7 @@
 		"Jack Phoenix"
 	],
 	"requires": {
-		"MediaWiki": ">= 1.35.0"
+		"MediaWiki": ">= 1.39.0"
 	},
 	"url": "https://www.mediawiki.org/wiki/Skin:WPtouch",
 	"license-name": "GPL-2.0-or-later",
@@ -16,13 +16,15 @@
 	"type": "skin",
 	"ValidSkinNames": {
 		"wptouch": {
-			"class": "SkinWPtouch",
+			"class": "SkinTemplate",
 			"args": [
 				{
 					"name": "wptouch",
+					"bodyClasses": [ "skated-wptouch-bg" ],
+					"bodyOnly": true,
+					"responsive": true,
+					"template": "WPtouchTemplate",
 					"styles": [
-						"mediawiki.skinning.interface",
-						"mediawiki.skinning.content.externallinks",
 						"skins.wptouch"
 					],
 					"scripts": [
@@ -38,12 +40,7 @@
 		]
 	},
 	"AutoloadClasses": {
-		"SkinWPtouch": "SkinWPtouch.php",
-		"WPtouchTemplate": "WPtouchTemplate.php",
-		"WPtouchHooks": "WPtouchHooks.php"
-	},
-	"Hooks": {
-		"OutputPageBodyAttributes": "WPtouchHooks::onOutputPageBodyAttributes"
+		"WPtouchTemplate": "WPtouchTemplate.php"
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
@@ -51,6 +48,21 @@
 	},
 	"ResourceModules": {
 		"skins.wptouch": {
+			"class": "ResourceLoaderSkinModule",
+			"features": {
+				"content-links": true,
+				"content-links-external": true,
+				"content-media": true,
+				"interface-message-box": true,
+				"interface-category": true,
+				"content-tables": true,
+				"i18n-ordered-lists": true,
+				"i18n-all-lists-margins": true,
+				"i18n-headings": true,
+				"elements": true,
+				"interface": true,
+				"logo": true
+			},
 			"styles": {
 				"resources/css/main.css": {
 					"media": "screen"
