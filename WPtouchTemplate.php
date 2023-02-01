@@ -131,7 +131,7 @@ class WPtouchTemplate extends BaseTemplate {
 	<div class="post">
 		<h2><?php $this->html( 'title' ) ?></h2>
 		<hr />
-		<div class="clearer"></div>
+		<div class="visualClear"></div>
 		<div class="mainentry mw-body-content">
 			<?php $this->html( 'bodytext' ) ?>
 			<?php if ( $this->data['dataAfterContent'] ) { $this->html( 'dataAfterContent' ); } ?>
