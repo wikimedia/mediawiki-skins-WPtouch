@@ -286,7 +286,10 @@ h6 {
 	display: none;
 	position: absolute;
 	top: 45px;
-	z-index: 2;
+	/* Originally 2, but increased to 4 for VisualEditor, as we want to have
+	 * the skin menu overlap VE's notices and not the other way around
+	 */
+	z-index: 4;
 }
 #wptouch-menu-inner a:hover {
 	color: #006bb3;

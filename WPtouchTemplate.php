@@ -127,7 +127,7 @@ class WPtouchTemplate extends BaseTemplate {
 	<a id="searchopen" class="top" href="#"><?php $this->msg( 'search' ) ?></a>
 </div>
 
-<div class="content">
+<div class="content" data-mw-ve-target-container>
 	<div class="post">
 		<h2><?php $this->html( 'title' ) ?></h2>
 		<hr />
