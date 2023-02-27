@@ -38,7 +38,6 @@ iframe {
 	max-width: 100% !important;
 }
 blockquote {
-	/* @embed */
 	background: #eee url(../images/quotes.png) no-repeat right -2px;
 	border: 1px solid #ccc;
 	border-radius: 10px;
@@ -157,7 +156,6 @@ h6 {
 	top: 0;
 }
 #headerbar-menu a {
-	/* @embed */
 	background: url(../images/wptouch-menu-dropper.png) 0 0;
 	display: block;
 	height: 45px;
@@ -204,17 +202,14 @@ h6 {
 	text-shadow: #000000 0px -1px 1px;
 }
 #drop-fade #loginopen {
-	/* @embed */
 	background: url(../images/menu-sprite.png) no-repeat 0 -31px;
 	padding-left: 16px;
 }
 #drop-fade #accountopen {
-	/* @embed */
 	background: url(../images/menu-sprite.png) no-repeat 0 -14px;
 	padding-left: 18px;
 }
 #drop-fade #searchopen {
-	/* @embed */
 	background: url(../images/menu-sprite.png) no-repeat 2px -94px;
 	height: 15px;
 	margin-top: 3px;
@@ -240,7 +235,6 @@ h6 {
 	position: relative;
 }
 .dropper li {
-	/* @embed */
 	background: url(../images/arrow.png) no-repeat right center;
 	border-bottom: 1px solid #1d1d1d;
 	border-top: 1px solid #363636;
@@ -461,7 +455,6 @@ div.printfooter {
 	display: none;
 }
 #headerbar, #wptouch-login, #wptouch-search {
-	/* @embed */
 	background: #000000 url(../images/head-fade-bk.png);
 }
 #headerbar-title, #headerbar-title a {
