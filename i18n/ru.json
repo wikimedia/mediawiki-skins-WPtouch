@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"BerryAVGN",
 			"Facenapalm",
 			"Helpau",
 			"Nitch",
@@ -8,6 +9,6 @@
 		]
 	},
 	"wptouch-desc": "Простая тема для мобильных устройств",
-	"wptouch-noscript-body": "В данный момент JavaScript отключён.\nВключите его в <em>Настройках</em><br /> для просмотра этого сайта.",
+	"wptouch-noscript-body": "В данный момент JavaScript отключён.\nВключите его в <em>настройках</em><br /> для просмотра этого сайта.",
 	"wptouch-noscript-title": "Уведомление"
 }
