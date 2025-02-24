@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Otokoume",
-			"Shirayuki"
+			"Shirayuki",
+			"Yaakiyu.jp"
 		]
 	},
-	"wptouch-desc": "モバイル端末向けのシンプルな外装",
+	"wptouch-desc": "モバイル端末向けのシンプルなスキン",
 	"wptouch-noscript-body": "JavaScript は現在無効です。\nこのウェブサイトを閲覧するには、ブラウザーの<em>設定</em>から JavaScript を有効にしてください。",
 	"wptouch-noscript-title": "お知らせ"
 }
