@@ -6,6 +6,7 @@
  */
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 
 class WPtouchTemplate extends BaseTemplate {
 	function execute() {
