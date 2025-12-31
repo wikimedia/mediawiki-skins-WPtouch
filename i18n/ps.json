@@ -4,6 +4,8 @@
 			"شاه زمان پټان"
 		]
 	},
+	"wptouch-prefs-talkpage": "[[mw:Skin talk:WPtouch|{{int:talk}}]]",
+	"skinname-wptouch": "WPtouch",
 	"wptouch-desc": "د موبايل وسيلو لپاره ساده پوښۍ",
 	"wptouch-noscript-body": "وسمهال جاواسکريپټ گول دی.\nد دې وېبپاڼې کتلو لپاره يې په <em>اوڼنو </em><br /> کې بل کړئ.",
 	"wptouch-noscript-title": "يادښت"
