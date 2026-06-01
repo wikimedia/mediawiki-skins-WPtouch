@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"BaRaN6161 TURK"
+			"BaRaN6161 TURK",
+			"HakanIST"
 		]
 	},
+	"wptouch-prefs-talkpage": "[[mw:Skin talk:WPtouch|{{int:talk}}]]",
+	"skinname-wptouch": "WPtouch",
 	"wptouch-desc": "Mobil cihazlar için basit görünüm",
 	"wptouch-noscript-body": "JavaScript şu anda kapalı.\nBu web sitesini görüntülemek için <em>Ayarlar</em><br /> içinden açın.",
 	"wptouch-noscript-title": "Bildirim"
