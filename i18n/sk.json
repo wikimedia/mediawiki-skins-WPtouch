@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"wptouch-prefs-talkpage": "[[mw:Skin talk:WPtouch|{{int:talk}}]]",
+	"skinname-wptouch": "WPtouch",
+	"wptouch-desc": "Jednoduchá téma vzhľadu pre mobilné zariadenia",
+	"wptouch-noscript-body": "JavaScript je momentálne vypnutý.\nNa zobrazenie tohto webu ho zapnite v <em>Nastaveniach</em><br />.",
+	"wptouch-noscript-title": "Oznam"
+}
