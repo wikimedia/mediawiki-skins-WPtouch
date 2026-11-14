@@ -97,7 +97,7 @@ class WPtouchTemplate extends BaseTemplate {
 
 			<ul id="head-personal">
 				<?php
-				foreach ( $this->getPersonalTools() as $key => $item ) {
+				foreach ( $this->getPersonalToolsClassic() as $key => $item ) {
 					echo $this->makeListItem( $key, $item );
 				}
 				?>
@@ -105,7 +105,14 @@ class WPtouchTemplate extends BaseTemplate {
 
 			<ul id="head-actions">
 				<?php
-				foreach ( $this->data['content_actions'] as $key => $tab ) {
+				$ca = $this->get( 'content_navigation' );
+				$contentActions = array_merge(
+					$ca['associated-pages'] ?? [],
+					$ca['views'] ?? [],
+					$ca['actions'] ?? [],
+					$ca['variants'] ?? []
+				);
+				foreach ( $contentActions as $key => $tab ) {
 					echo $this->makeListItem( $key, $tab );
 				}
 				?>
@@ -143,5 +150,23 @@ class WPtouchTemplate extends BaseTemplate {
 		<div class="cleared"></div>
 		<div class="visualClear"></div>
 <?php
+	}
+
+	/**
+	 * Backwards compatibility method to get personal tools the "classic way" that doesn't trigger
+	 * deprecation warnings (T422975).
+	 *
+	 * @return array
+	 */
+	private function getPersonalToolsClassic() {
+		$contentNav = $this->get( 'content_navigation' );
+		$personalTools = array_merge(
+			$contentNav['user-interface-preferences'] ?? [],
+			$contentNav['user-page'] ?? [],
+			$contentNav['notifications'] ?? [],
+			$contentNav['user-menu'] ?? []
+		);
+
+		return $this->getSkin()->getPersonalToolsForMakeListItem( $personalTools );
 	}
 }

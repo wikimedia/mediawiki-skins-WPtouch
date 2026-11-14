@@ -9,7 +9,7 @@
 		"Jack Phoenix"
 	],
 	"requires": {
-		"MediaWiki": ">= 1.43.0"
+		"MediaWiki": ">= 1.46.0"
 	},
 	"url": "https://www.mediawiki.org/wiki/Skin:WPtouch",
 	"license-name": "GPL-2.0-or-later",
@@ -25,6 +25,16 @@
 					"bodyOnly": true,
 					"responsive": true,
 					"template": "WPtouchTemplate",
+					"menus": [
+						"user-page",
+						"user-interface-preferences",
+						"notifications",
+						"user-menu",
+						"associated-pages",
+						"views",
+						"actions",
+						"variants"
+					],
 					"styles": [
 						"skins.wptouch"
 					],
